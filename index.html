@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Hangman Game</h1>
+      <p class="hint">Hint: <span id="hint-text"></span></p>
+      <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+      <div class="word-display" id="wordDisplay"></div>
+      <div class="letter-buttons" id="letterButtons"></div>
+      <p class="lives-counter">Lives: <span id="livesCount">10</span></p>
+      <button id="playAgainButton" class="play-again">Play Again</button>
+    </div>
 
-  <script src="./scripts/script.js"></script>
-</body>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2 id="popupMessage"></h2>
+        <button id="closePopup" class="close-popup">Close</button>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
